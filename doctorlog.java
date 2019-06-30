@@ -26,10 +26,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class doctorlog extends AppCompatActivity implements View.OnClickListener {
-    private EditText fname,lname,degree,experience,etusername,etpasswd;
+   // private EditText fname,lname,degree,experience,etusername,etpasswd;
     //String Firstname , Lastname,Degree,Experience,username, passwd;
-    private Button button;
-    private ProgressDialog progressDialog;
+   // private Button button;
+    //private ProgressDialog progressDialog;
 
 
 
@@ -40,7 +40,7 @@ public class doctorlog extends AppCompatActivity implements View.OnClickListener
         setContentView(R.layout.activity_doctorlog);
 
 
-        fname =(EditText) findViewById(R.id.name);
+        /*fname =(EditText) findViewById(R.id.name);
         lname= (EditText) findViewById(R.id.lastname);
         degree= (EditText) findViewById(R.id.deg);
         experience= (EditText) findViewById(R.id.exp);
@@ -49,7 +49,7 @@ public class doctorlog extends AppCompatActivity implements View.OnClickListener
 
         button=(Button) findViewById(R.id.register);
         button.setOnClickListener(this);
-        progressDialog = new ProgressDialog(this);
+        progressDialog = new ProgressDialog(this);*/
 
 
 
@@ -57,13 +57,13 @@ public class doctorlog extends AppCompatActivity implements View.OnClickListener
 
 
 
-    @Override
+   /* @Override
     public void onClick(View v) {
         if (v==button)
             registerlog();
-    }
+    }*/
 
-    private void registerlog() {
+    /*private void registerlog() {
 
         button=(Button) findViewById(R.id.register);
         fname =(EditText) findViewById(R.id.name);
@@ -79,12 +79,7 @@ public class doctorlog extends AppCompatActivity implements View.OnClickListener
         final String Experience=experience.getText().toString().trim();
         final String username=etusername.getText().toString().trim();
         final String passwd= etpasswd.getText().toString().trim();
-        /*String String method = "register";
-        Stringbackground backgroundTask = new background(this);
-        backgroundTask.execute(method,Firstname,Lastname,Degree,Experience,username,passwd);
-//backgroundTask is variable
-//background is the method or funct in backgrounftask class
-        finish();*/
+        
 
         progressDialog.setMessage("Registering...");
         progressDialog.show();
@@ -133,4 +128,4 @@ public class doctorlog extends AppCompatActivity implements View.OnClickListener
     }
 
 
-}
+}*/
